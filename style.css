@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy','sans-serif';
+
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    padding: 10px;
+    background-color:green
+}
+
+h1{
+    color: blueviolet;
+    font-size: 200px;
+    font-weight: 900;
+    position: relative;
+    text-shadow: 2px blue;
+    text-shadow: 3px 3px 3px gold;}
+  
+h1::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 10px;
+    width: 0;
+    background-color:blue;
+    transition: all ease 1s;
+}
+
+h1:hover::after{
+    width: 480px;
+}
